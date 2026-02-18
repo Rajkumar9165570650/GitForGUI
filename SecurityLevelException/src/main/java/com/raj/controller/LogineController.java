@@ -19,7 +19,7 @@ import com.raj.security.JWTUtils;
 @RestController
 @RequestMapping("/login-api")
 public class LogineController {
-	
+	//this is Controller class
 	@Autowired
 	private AuthenticationManager manager;
 	
