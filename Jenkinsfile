@@ -7,11 +7,16 @@ pipeline {  //root of the pipeline
      
       stages {  // group of multiple task that i want perform
 
-        stage('Build') { // single task that i want to execute automaticaly
+       stages {
+        stage('Build') {
             steps {
-                bat 'mvn clean install'
+                dir('SecurityLevelException') {
+                    bat 'mvnw.cmd clean install'
+                }
             }
         }
+    }
+
 
         stage('Test') {
             steps {
