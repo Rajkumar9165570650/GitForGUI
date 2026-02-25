@@ -7,7 +7,7 @@ pipeline {  //root of the pipeline
      
       stages {  // group of multiple task that i want perform
 
-       stages {
+      
         stage('Build') {
             steps {
                 dir('SecurityLevelException') {
@@ -15,7 +15,6 @@ pipeline {  //root of the pipeline
                 }
             }
         }
-    }
 
 
         stage('Test') {
