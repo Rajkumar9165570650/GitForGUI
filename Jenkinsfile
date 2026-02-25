@@ -2,7 +2,7 @@ pipeline {  //root of the pipeline
     agent any //where the pipeline run any means it will run anywindo /linux 
 
     tools {
-        maven 'Maven-3'
+         maven 'Maven-3.9.6'
      }
      
       stages {  // group of multiple task that i want perform
