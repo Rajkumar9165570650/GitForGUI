@@ -30,7 +30,7 @@ public class LogineController {
 	public ResponseEntity<ResponseAuthorize> login(@RequestBody RequestAuthorize req){
 		Authentication authenticate = manager.authenticate(new UsernamePasswordAuthenticationToken(req.getUserName(), req.getPassword()));
 		
-		String key = utils.generateKey(req.getUserName());
+		String key = utils.generateKey(authenticate.getName());
 		return new ResponseEntity<ResponseAuthorize> (new ResponseAuthorize(key),HttpStatus.OK);	
 	}
 	

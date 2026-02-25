@@ -13,7 +13,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import tools.jackson.databind.ObjectMapper;
 
 @Component
-public class AuthenticationException implements AuthenticationEntryPoint {
+public class CustomAuthenticationException implements AuthenticationEntryPoint {
 
 	@Override
 	public void commence(HttpServletRequest request, HttpServletResponse res,
